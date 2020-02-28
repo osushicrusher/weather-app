@@ -7,7 +7,6 @@
         <div class="weather-box">
             <p class="temp">{{ Math.round(weather.main.temp) }}&#8451;</p>
             <p class="temp-minmax">Min: {{ Math.round(weather.main.temp_min )}}&#8451; Max: {{ Math.round(weather.main.temp_max) }}&#8451;</p>
-            <p>{{ weather.weather[0].main }}</p>
         </div>
     </div>
 </template>
@@ -42,8 +41,13 @@ export default {
 </script>
 
 <style>
+
+.weather-wrap {
+    margin-top: 20px;
+}
+
 .location-box .location {
-    color: #FFF;
+    color: #313131;
     font-size: 32px;
     font-weight: 500;
     text-align: center;
@@ -65,11 +69,10 @@ export default {
 .weather-box .temp {
     display: inline-block;
     padding: 10px 25px;
-    color: #FFF;
+    color: #8f8e8e;
     font-size: 70px;
     font-weight: 900;
-    text-shadow: 0 0 12px rgba(0, 0, 0, .75);
-    background-color: rgba(255, 255, 255, .25);
+    background-color: #fff;
     border-radius: 16px;
     margin: 30px 0;
     box-shadow: 3px 6px rgba(0, 0, 0, .25);
@@ -78,6 +81,7 @@ export default {
 .weather-box .temp-minmax {
     color: #FFF;
     font-size: 18px;
+    font-style: italic;
     text-shadow: 0 0 12px rgba(0, 0, 0, .25);
 }
 

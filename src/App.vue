@@ -78,7 +78,7 @@ export default {
 }
 
 .snow {
-  background-color: rgb(206, 204, 204);
+  background-color: #fff;
 }
 
 * {
