@@ -35,18 +35,22 @@ export default {
   },
   methods: {
     fetchWeather ($event) {
+      // 天気情報の取得
       this.query = $event
-          fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
-          .then(res => {
-            return res.json();
-          }).then(this.setResults)
-            .then(this.changeStyle)
+        fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
+        .then(res => {
+          return res.json();
+        }).then(this.setResults)
+          .then(this.changeStyle)
     },
     setResults (results) {
+      // fetchの結果をdataのresultsに格納
       this.weather = results
     },
     changeStyle() {
+      // 天気情報を小文字に変換
       this.weatherClass = `${this.weather.weather[0].main}`.toLowerCase()
+      // 天気情報によって表示されるimgを変更
       this.weatherImgUrl = require('./assets/' + this.weather.weather[0].main.toLowerCase() + '.png')
     }
   }

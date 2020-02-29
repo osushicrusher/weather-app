@@ -43,53 +43,48 @@ export default {
 <style>
 
 .weather-wrap {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 3px 6px rgba(0, 0, 0, .25);
+    color: #313131;
+    text-align: center;
     margin-top: 20px;
+    padding: 20px;
+}
+
+.location-box {
+    padding: 10px;
 }
 
 .location-box .location {
-    color: #313131;
     font-size: 32px;
     font-weight: 500;
-    text-align: center;
     text-shadow: 1px 3px rgba(0, 0, 0, .25);
 }
 
 .location-box .date {
-    color: #FFF;
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    text-align: center;
 }
 
 .weather-box {
-    text-align: center;
+    border: 2px solid #313131;
+    padding: 10px;
 }
 
 .weather-box .temp {
-    display: inline-block;
-    padding: 10px 25px;
-    color: #8f8e8e;
     font-size: 70px;
     font-weight: 900;
-    background-color: #fff;
-    border-radius: 16px;
-    margin: 30px 0;
-    box-shadow: 3px 6px rgba(0, 0, 0, .25);
+    padding: 10px;
 }
 
 .weather-box .temp-minmax {
-    color: #FFF;
     font-size: 18px;
     font-style: italic;
     text-shadow: 0 0 12px rgba(0, 0, 0, .25);
+    margin-top: 10px;
+    padding: 10px;
 }
 
-.weather-box .weather {
-    color: #FFF;
-    font-size: 48px;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 3px 6px rgba(0, 0, 0, .25);
-}
 </style>

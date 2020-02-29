@@ -3,7 +3,7 @@
         <input 
         type="text" 
         class="search-bar" 
-        placeholder="How will the weather be?" 
+        placeholder="Where" 
         autofocus 
         v-model="queryValue"
         @keypress="queryGetter"
