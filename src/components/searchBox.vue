@@ -8,10 +8,12 @@
         v-model="queryValue"
         @keypress="queryGetter"
         />
+        <font-awesome-icon icon="search" class="icon" v-if="queryValue == ''"></font-awesome-icon>
         <span 
-        class="value-deletion" 
+        class="icon" 
         v-if="queryValue != ''"
-        @click="deleteQueryValue()">&#10006;</span>
+        @click="deleteQueryValue()">&#10006;
+        </span>
     </div>
 </template>
 
@@ -25,6 +27,7 @@ export default {
         }
     },
     methods: {
+        // search-barのvalueを取得する
         queryGetter (e) {
             if (e.key == 'Enter' && this.queryGetterFlag == true) {
                 // カスタムイベントplaceを登録し、placeが発火するとfetchWeatherを実行
@@ -53,9 +56,9 @@ export default {
     width: 100%;
 }
 
-.search-box .value-deletion {
+.search-box .icon {
     font-size: 18px;
-    color: #313131;
+    color: #777676;
     position: absolute;
     top: 50%;
     right: 5px;
