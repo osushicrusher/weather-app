@@ -49,11 +49,7 @@ export default {
     color: #313131;
     text-align: center;
     margin-top: 20px;
-    padding: 20px;
-}
-
-.location-box {
-    padding: 10px;
+    padding: 14px;
 }
 
 .location-box .location {
@@ -70,13 +66,11 @@ export default {
 
 .weather-box {
     border: 2px solid #313131;
-    padding: 10px;
 }
 
 .weather-box .temp {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
-    padding: 10px;
 }
 
 .weather-box .temp-minmax {
