@@ -55,17 +55,12 @@ export default {
 .location-box .location {
     font-size: 32px;
     font-weight: 500;
-    text-shadow: 1px 3px rgba(0, 0, 0, .25);
 }
 
 .location-box .date {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-}
-
-.weather-box {
-    border: 2px solid #313131;
 }
 
 .weather-box .temp {
@@ -76,8 +71,6 @@ export default {
 .weather-box .temp-minmax {
     font-size: 18px;
     font-style: italic;
-    text-shadow: 0 0 12px rgba(0, 0, 0, .25);
-    margin-top: 10px;
     padding: 10px;
 }
 
