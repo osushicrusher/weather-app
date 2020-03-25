@@ -48,28 +48,39 @@ export default {
     box-shadow: 3px 6px rgba(0, 0, 0, .25);
     color: #313131;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.4em;
     padding: 14px;
 }
 
+@media screen and (min-width: 425px) {
+  .weather-wrap {
+    margin: 2em auto 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
 .location-box .location {
-    font-size: 32px;
+    font-size: 1.4em;
     font-weight: 500;
 }
 
 .location-box .date {
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 300;
     font-style: italic;
 }
 
 .weather-box .temp {
-    font-size: 60px;
+    font-size: 3em;
     font-weight: 900;
 }
 
 .weather-box .temp-minmax {
-    font-size: 18px;
+    font-size: .8em;
     font-style: italic;
     padding: 10px;
 }

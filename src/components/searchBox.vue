@@ -3,7 +3,7 @@
         <input 
         type="text" 
         class="search-bar" 
-        placeholder="Where" 
+        placeholder="How the weather will be?" 
         autofocus 
         v-model="queryValue"
         @keypress="queryGetter"
@@ -65,11 +65,11 @@ export default {
     transform: translate(-50%, -50%);
 }
 
-.search-box .search-bar {
+.search-bar {
     width: 100%;
     padding: 15px;
     color: #313131;
-    font-size: 21px;
+    font-size: .9em;
     appearance: none;
     -webkit-appearance: none;
     border: none;
@@ -79,7 +79,7 @@ export default {
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
 }
 
-.search-box .search-bar:focus {
+.search-bar:focus {
     box-shadow: 0 0 16px rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .9);
 }

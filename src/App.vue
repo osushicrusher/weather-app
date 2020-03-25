@@ -59,6 +59,42 @@ export default {
 
 <style>
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-size: 14px;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    font-size: 16px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    font-size: 24px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    font-size: 28px;
+    margin: auto;
+    width: 70%;
+  }
+}
+
 .rain {
   background-image: linear-gradient(to bottom right, rgba(2, 2, 54, 0.8), rgba(5, 5, 122, 0.7));
 }
@@ -85,14 +121,4 @@ export default {
   background-color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-main {
-  min-height: 100vh;
-  padding: 30px;
-}
 </style>

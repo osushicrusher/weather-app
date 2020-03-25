@@ -3,7 +3,7 @@
         <div class="icon-box">
             <img :src="setImg">
         </div>
-        <p class="comment">The current weather in <span class="font-stressed">{{ weather.name }}</span> is "{{ weather.weather[0].main}}". {{ weatherComment() }} </p>
+        <p class="comment">The current weather in {{ weather.name }} is <span class="font-stressed">"{{ weather.weather[0].main}}" </span>. {{ weatherComment() }} </p>
     </div>
 </template>
 
@@ -61,7 +61,7 @@ export default {
 <style>
 
 .font-stressed {
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -71,7 +71,7 @@ export default {
     box-shadow: 0 0 8px rgba(0, 0, 0, .75);
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 2em;
     width: 100%;
 }
 
